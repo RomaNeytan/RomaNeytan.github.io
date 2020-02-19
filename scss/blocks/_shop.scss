@@ -1,0 +1,95 @@
+.shop{
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__column{
+        flex: 0 1 35%;
+
+        &_sm{
+            flex: 0 1 15%;
+        }
+    }
+    &-item{
+        position: relative;
+        height: 100%;
+
+        &__header{
+            display: flex;
+            position: relative;
+        }
+        &__img{
+            display: block;
+            padding-bottom: 50%;
+            &_w{
+                flex-basis: 100%;
+            }
+            &_l{
+                padding-bottom: 100%;
+                height: 100%;
+            }
+            &:after{
+                content: " ";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top:0;
+                left:0;
+                z-index: 1;
+                background: rgba(100,194,158,.6);
+                opacity: 0;
+                transition: opacity .2s linear;
+            }
+            &:hover{
+                &:after{
+                    opacity: 1;
+                }
+                .shop-item__content{
+                    display: block;
+                } 
+            }
+        }
+        &__content{
+            text-align: center;
+            display: none;
+            position: absolute;
+            top:50%;
+            left:50%;
+            z-index: 5;
+            transform: translate3d(-50%,-50%,0);
+        }
+        &__title{
+            font-size: 14px;
+            color:#ffffff;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+    }
+
+    &-footer{
+        padding: 65px 0;
+        background: #282f35;
+        text-align: center;
+        &__btn{
+            a{
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+                font-size: 14px;
+                letter-spacing: 3px;
+                color:#ffffff;
+                text-transform: uppercase;
+                padding: 15px 65px;
+                border: 1px solid #94979a;
+                transition: background .2s linear,color .2s linear;
+
+                &:hover{
+                    background: #000;
+                    color:#76c264;
+                }
+            }
+        }
+    }
+}
