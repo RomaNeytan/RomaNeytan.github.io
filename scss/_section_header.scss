@@ -1,0 +1,25 @@
+.section{
+    &__title{
+        font-size: 18px;
+        color:$title-color;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+    &__text{
+        font-size: 18px;
+        color:$text-color;
+        line-height: 34px;
+    }
+
+    &__iccon{
+        width: 51px;
+        height: 51px;
+        fill:#72c7a6;
+        transition: transform 1s linear;
+
+        &:hover{
+            transform:translateY(-50%);
+        }
+    }
+}

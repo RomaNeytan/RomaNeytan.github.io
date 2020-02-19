@@ -2,6 +2,8 @@
 
 body{
     margin: 0;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
 }
 
 *,
@@ -18,12 +20,33 @@ a{
     text-decoration: none;
 }
 
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p{
+    margin: 0 0 4px;
+}
+
 // Grid
 
 @import "wrapper.scss";
 
+// Section-header
+
+@import "section_header.scss";
+
+// Ibg adaptive
+
+@import "ibg.scss";
+
 // Blocks
 
-
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/works";
 
 
