@@ -92,4 +92,26 @@
             }
         }
     }
+
+    @media (max-width:$screen-sm-max){
+        &__column{
+            flex: 0 1 70%;
+    
+            &_sm{
+                flex: 0 1 30%;
+            }
+        }
+    }
+
+    @media (max-width:$screen-xs-max){
+        &-footer{
+            padding: 35px 0;
+            &__btn{
+                a{
+                    font-size: 11px;
+                    padding: 15px 35px;
+                }
+            }
+        }
+    }
 }

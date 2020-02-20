@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-const browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync').create();
 let cleanCSS = require('gulp-clean-css');
 var imagemin     = require('gulp-imagemin'),
     imgCompress  = require('imagemin-jpeg-recompress');

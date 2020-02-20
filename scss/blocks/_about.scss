@@ -12,7 +12,12 @@
     &__title{
         margin: 25px 0;
     }
-    &__text{
 
+    @media (max-width:$screen-sm-max){
+        padding: 50px 0;
+
+        &__title{
+            margin: 15px 0;
+        }
     }
 }

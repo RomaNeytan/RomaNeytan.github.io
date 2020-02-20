@@ -75,4 +75,18 @@
             margin-right: 15px;
         }
     }
+
+    @media (max-width:$screen-xs-max){
+        &__row{
+            flex-direction: column;
+        }
+        &__column{
+            &_add{
+                text-align: center;
+            }
+        }
+        &-social{
+            margin: 15px 0;
+        }
+    }
 }

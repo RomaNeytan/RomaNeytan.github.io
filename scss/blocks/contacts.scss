@@ -67,4 +67,25 @@
         }
     }
     
+    @media (max-width:$screen-sm-max){
+        padding: 50px 0;
+    }
+
+    @media (max-width:$screen-xs-max){
+        &__title{
+            margin: 15px 0;
+        }
+
+        &-form{
+            flex-direction: column;
+
+            &__btn{
+                margin: 7px 0 0;
+                flex-grow: 1;
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

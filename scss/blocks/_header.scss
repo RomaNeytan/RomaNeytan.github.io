@@ -59,4 +59,42 @@
         left:50%;
         transform: translate3d(-50%,0,0);
     }
+
+    @media (max-width:627px){
+        &-menu{
+            &__item{
+                &:nth-child(2){
+                    margin-right: 24px;
+                }
+
+                &:after{
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+
+    @media (max-width:$screen-xs-max){
+        &-menu{
+            display:none;
+            position: absolute;
+            top:185%;
+            left:0;
+            background: #000;
+            box-shadow: 0 0 4px rgb(0,0,0);
+            width: 100%;
+            padding: 4px 0;
+            &__item{
+                &:after{
+                    display: none;
+                }
+                &:nth-child(2){
+                    margin-right: 0;
+                }
+                &:nth-child(3){
+                    margin-left: 0;
+                }
+            }
+        }
+    }
 }

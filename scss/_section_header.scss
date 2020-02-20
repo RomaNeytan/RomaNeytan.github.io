@@ -22,4 +22,17 @@
             transform:translateY(-50%);
         }
     }
+
+    @media (max-width:$screen-sm-max){
+        &__text{
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        @media (max-width:$screen-xs-max){
+            &__title{
+                font-size: 21px;
+            }
+        }
+    }
 }

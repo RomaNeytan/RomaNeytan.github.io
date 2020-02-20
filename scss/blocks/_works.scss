@@ -70,4 +70,23 @@
             padding-bottom: 38%;
         }
     }
+
+    @media (max-width:$screen-md-max){
+        &-content{
+            &__header{
+                padding: 20px;
+            }
+        }
+    }
+
+    @media (max-width:$screen-sm-max){
+        &__inner{
+            flex-direction: column;
+        }
+        &-item{
+            &__logo{
+                display: none;
+            }
+        }
+    }
 }
