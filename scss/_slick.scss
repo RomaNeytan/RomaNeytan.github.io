@@ -1,0 +1,38 @@
+.slick-slide{
+    &:focus{
+        outline: none;
+    }
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+
+    li{
+        margin: 0 4px;
+        &.slick-active button{
+            background: #a9afb3;
+        }
+        button{
+            cursor: pointer;
+            font-size: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: transparent;
+            border: 1px solid #a9afb3;
+
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    @media (max-width:$screen-sm-max){
+        margin-top: 25px;
+    }
+    @media (max-width:$screen-xs-max){
+        margin-top: 10px;
+    }
+}

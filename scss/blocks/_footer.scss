@@ -77,6 +77,8 @@
     }
 
     @media (max-width:$screen-xs-max){
+        padding: 35px 0;
+
         &__row{
             flex-direction: column;
         }
@@ -86,7 +88,7 @@
             }
         }
         &-social{
-            margin: 15px 0;
+            margin: 25px 0;
         }
     }
 }

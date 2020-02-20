@@ -88,5 +88,15 @@
                 display: none;
             }
         }
+        &-content{
+            display: flex;
+            flex-direction: column;
+            &__header{
+                order:2;
+            }
+            &__img{
+                order:1;
+            }
+        }
     }
 }
